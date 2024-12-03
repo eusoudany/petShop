@@ -1,0 +1,340 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #FFD2BB;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: rgb(5, 4, 4);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+
+.hero .cta-button {
+    background-color: #FFD2BB;
+    color: rgb(6, 6, 6);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #FFD2BB;
+}
+
+/* Services Section Styles */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #e65b50;
+}
+
+/* Promo Section Styles */
+.promo {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.promo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.promo p {
+    font-size: 18px;
+}
+
+/* Products Page Styles */
+.products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-category {
+    margin-bottom: 40px;
+}
+
+.product-category h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #FFD2BB;
+    color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #FFD2BB;
+}
+
+/* Gallery Page Styles */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Contact Page Styles */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #FFD2BB;
+    color: rgb(4, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #FFD2BB;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.newsletter {
+    margin-top: 40px;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.newsletter input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #030000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter button {
+    width: 100px;
+    background-color: #FFD2BB;
+    color: rgb(4, 1, 1);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #FFD2BB;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFD2BB;
+    color: rgb(4, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+.service-icon{
+    width: 300px;
+    height: 200px;
+}
+header img{
+    width: 150px;
+    height: 150px;
+}
